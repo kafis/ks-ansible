@@ -1,0 +1,7 @@
+---
+- name: create welcome message
+  template:
+    src: motd
+    dest: /etc/motd
+    owner: root
+    group: root
