@@ -14,6 +14,8 @@
     
 ## Spin Up The Nodes
 
+Insert your publickey into the file nodes/roles/authorization/files/konrad.fischer
+
     cd nodes
     vagrant up
     
