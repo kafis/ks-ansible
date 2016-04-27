@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: generic
   become: yes
   remote_user: vagrant
   roles:
