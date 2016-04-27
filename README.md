@@ -14,10 +14,12 @@
     
 ## Spin Up The Nodes
 
+    cd nodes
     vagrant up
     
 ## Provision
-
+    
+    cd provisioning
     ansible-playbook -i environment/inventory site.yml
     
     
