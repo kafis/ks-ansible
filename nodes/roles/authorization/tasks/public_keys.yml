@@ -1,0 +1,6 @@
+---
+- name: Adding public keys for user
+  authorized_key: user=vagrant key="{{ item }}"
+  with_file:
+    - public_keys/konrad.fischer
+  sudo: yes

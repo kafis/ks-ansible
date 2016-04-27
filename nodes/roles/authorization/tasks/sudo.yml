@@ -1,0 +1,7 @@
+---
+- name: Sudo without password
+  copy:
+    src: sudoers
+    dest: /etc/sudoers
+    owner: root
+    group: root

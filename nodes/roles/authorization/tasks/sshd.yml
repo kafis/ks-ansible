@@ -1,0 +1,12 @@
+---
+- name: Create ssh config
+  copy:
+    src: sshd_config
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+  register: ssh
+
+- name: Restart ssh daemon
+  service: name=ssh state=restarted
+  ignore_errors: true
